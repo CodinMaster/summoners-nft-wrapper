@@ -2,14 +2,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import { HardhatUserConfig } from "hardhat/types";
-import "@typechain/hardhat";
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
 import "hardhat-deploy";
 import "hardhat-deploy-ethers";
 import "hardhat-abi-exporter";
 import "hardhat-tracer";
-import "@tenderly/hardhat-tenderly";
 
 const config: HardhatUserConfig = {
   solidity: {
